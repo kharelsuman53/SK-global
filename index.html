@@ -5,79 +5,112 @@
   <title>株式会社SK global</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Helvetica Neue', sans-serif;
-      background: #f0f2f5;
-      color: #333;
+      background: #111;
+      color: #fff;
+      min-height: 100vh;
       position: relative;
-      z-index: 0;
+      overflow-x: hidden;
     }
 
-    /* 雨の背景 */
+    /* 背景の雨GIF */
     body::before {
       content: "";
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif');
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif') no-repeat center center;
       background-size: cover;
-      opacity: 0.15;
-      z-index: -1;
-      pointer-events: none;
+      opacity: 0.12;
+      z-index: -2;
     }
 
     header {
-      background-color: #004466;
-      color: white;
-      padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      padding: 60px 20px 30px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px);
+      animation: fadeIn 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 36px;
+      color: #00ccff;
+      animation: glow 2s infinite alternate;
+    }
+
+    header p {
+      font-size: 16px;
+      margin-top: 10px;
     }
 
     .container {
-      max-width: 960px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.5s ease-in;
     }
 
-    h1, h2 {
-      color: #004466;
+    h2 {
+      color: #00ccff;
+      border-bottom: 1px solid #00ccff;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      line-height: 1.6;
+      margin-bottom: 10px;
     }
 
     ul {
-      padding-left: 20px;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin: 10px 0;
+      margin-left: 20px;
     }
 
     a.button {
       display: inline-block;
-      padding: 10px 16px;
-      background: #006699;
-      color: white;
-      border-radius: 5px;
+      margin: 8px 0;
+      padding: 10px 18px;
+      background: #00ccff;
+      color: #000;
+      border-radius: 6px;
       text-decoration: none;
-      margin-top: 10px;
+      transition: 0.3s;
     }
 
     a.button:hover {
-      background: #004466;
+      background: #00aacc;
+      color: #fff;
+    }
+
+    /* アニメーション */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ccff; }
+      to { text-shadow: 0 0 15px #00ffff; }
     }
 
     @media screen and (max-width: 600px) {
       header h1 {
-        font-size: 24px;
+        font-size: 26px;
+      }
+      .container {
+        padding: 20px;
+        margin: 20px;
       }
     }
   </style>
@@ -92,11 +125,11 @@
 <div class="container">
   <p><strong>代表取締役：</strong>カレル・スマン<br>
   <strong>所在地：</strong>大阪府大阪市生野区田島4丁目6-19<br>
-  <strong>電話番号：</strong><a href="tel:08045673816">080-4567-3816</a></p>
+  <strong>電話番号：</strong><a href="tel:08045673816" style="color:#00ccff;">080-4567-3816</a></p>
 
   <h2>会社紹介</h2>
   <p>
-    株式会社SK globalは、大阪市を拠点に「ホテル客室清掃業」「リサイクル事業」「飲食事業」の3つの柱で事業を展開する多角経営企業です。<br>
+    株式会社SK globalは、大阪市を拠点に「ホテル客室清掃業」「リサイクル事業」「飲食事業」の3つの柱で展開する多角経営企業です。<br>
     「誠実・丁寧・迅速」をモットーに、地域と信頼を育みながらサービスを提供しています。
   </p>
   <ul>
