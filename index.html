@@ -10,7 +10,25 @@
       font-family: 'Helvetica Neue', sans-serif;
       background: #f0f2f5;
       color: #333;
+      position: relative;
+      z-index: 0;
     }
+
+    /* 雨の背景 */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif');
+      background-size: cover;
+      opacity: 0.15;
+      z-index: -1;
+      pointer-events: none;
+    }
+
     header {
       background-color: #004466;
       color: white;
@@ -18,6 +36,7 @@
       text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
+
     .container {
       max-width: 960px;
       margin: 30px auto;
@@ -26,18 +45,22 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
     h1, h2 {
       color: #004466;
     }
+
     ul {
       padding-left: 20px;
     }
+
     img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
       margin: 10px 0;
     }
+
     a.button {
       display: inline-block;
       padding: 10px 16px;
@@ -47,9 +70,11 @@
       text-decoration: none;
       margin-top: 10px;
     }
+
     a.button:hover {
       background: #004466;
     }
+
     @media screen and (max-width: 600px) {
       header h1 {
         font-size: 24px;
@@ -89,16 +114,4 @@
 </div>
 
 </body>
-</html>body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif');
-  background-size: cover;
-  opacity: 0.2;
-  z-index: -1;
-  pointer-events: none;
-}
+</html>
