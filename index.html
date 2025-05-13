@@ -12,43 +12,76 @@
       background: #f9f9f9;
       color: #333;
     }
+
     header {
       background-color: #005bac;
       color: white;
-      padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
     }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
     nav {
       background-color: #eee;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       margin: 0 15px;
       text-decoration: none;
       color: #005bac;
       font-weight: bold;
     }
+
     section {
       padding: 30px;
     }
+
     h2 {
       border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
     }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
     footer {
       background-color: #005bac;
       color: white;
       text-align: center;
       padding: 10px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="logo.png" alt="SK Global ロゴ">
     <h1>株式会社SK global</h1>
-    <p>ホテル清掃・リサイクル・飲食事業</p>
   </header>
 
   <nav>
@@ -74,6 +107,14 @@
     <p>株式会社SK globalは、大阪市を拠点に、ホテル客室清掃・リサイクル・飲食の3つの分野で事業を展開している多角経営企業です。</p>
     <p>私たちは、「誠実・丁寧・迅速」をモットーに、クライアントや地域社会から信頼されるサービスを提供しています。清掃業ではホテルの快適な空間づくりを、リサイクルでは持続可能な社会づくりを、飲食事業では安心で美味しい食の提供を通して、豊かな暮らしの一助となることを目指しています。</p>
     <p>今後も地域密着型の企業として、多様なニーズに応えながら、より質の高いサービスの実現に努めてまいります。</p>
+
+    <div class="gallery">
+      <img src="image1.png" alt="写真1">
+      <img src="image2.png" alt="写真2">
+      <img src="image3.png" alt="写真3">
+      <img src="image4.png" alt="写真4">
+      <img src="image5.png" alt="写真5">
+    </div>
   </section>
 
   <footer>
