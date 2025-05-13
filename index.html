@@ -14,13 +14,13 @@
     }
 
     /* ヘッダー */
-    .header {
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 25px;
+      padding: 12px 20px;
       background-color: #ffffff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     .header-left {
@@ -40,15 +40,15 @@
 
     .header-icons {
       display: flex;
-      gap: 20px;
+      gap: 16px;
     }
 
     .icon {
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
     }
 
-    /* メインコンテンツ */
+    /* メイン */
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -56,21 +56,14 @@
       text-align: center;
     }
 
-    .main-logo {
-      width: 250px;
-      max-width: 90%;
-      margin-bottom: 30px;
-    }
-
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #555;
-      margin-top: 0;
     }
 
     .photo {
@@ -81,10 +74,10 @@
       width: 100%;
       max-width: 600px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    a.button {
+    .button {
       display: inline-block;
       margin-top: 30px;
       padding: 12px 24px;
@@ -107,9 +100,9 @@
 <body>
 
   <!-- ヘッダー -->
-  <header class="header">
+  <header>
     <div class="header-left">
-      <img src="logo.png" alt="SK global ロゴ" class="header-logo" />
+      <img src="logo.png" alt="ロゴ" class="header-logo" />
       <span class="company-name">SK GLOBAL</span>
     </div>
     <div class="header-icons">
@@ -119,10 +112,8 @@
     </div>
   </header>
 
-  <!-- メイン -->
+  <!-- メイン内容 -->
   <div class="container">
-    <img src="logo.png" alt="SK global メインロゴ" class="main-logo" />
-
     <h1>株式会社 SK global</h1>
     <p>ホテル清掃・リサイクル・飲食事業を展開しています。</p>
 
@@ -136,5 +127,6 @@
   <footer>
     &copy; 2025 株式会社 SK global
   </footer>
+
 </body>
 </html>
