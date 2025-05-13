@@ -1,135 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>株式会社 SK global</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>株式会社SK global</title>
   <style>
     body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #f5f5f5, #e2e8e4);
-      font-family: 'Segoe UI', 'Arial', sans-serif;
-      color: #2c3e50;
+      background: #f9f9f9;
+      color: #333;
     }
-
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 20px;
-      background-color: #ffffff;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      background-color: #005bac;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
-
-    .header-left {
-      display: flex;
-      align-items: center;
+    nav {
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
     }
-
-    .header-logo {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .company-name {
-      font-size: 1.2rem;
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #005bac;
       font-weight: bold;
     }
-
-    .header-icons {
-      display: flex;
-      gap: 20px;
+    section {
+      padding: 30px;
     }
-
-    .icon {
-      width: 36px;
-      height: 36px;
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
     }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    .photo-grid {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .photo-grid img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #2c3e50;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-
     footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #888;
+      background-color: #005bac;
+      color: white;
       text-align: center;
-      padding-bottom: 30px;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="header-left">
-      <img src="logo.png" alt="ロゴ" class="header-logo" />
-      <span class="company-name">SK GLOBAL</span>
-    </div>
-    <div class="header-icons">
-      <a href="mailto:skglobal@example.com" title="メール"><img src="mail-icon.png" alt="メール" class="icon" /></a>
-      <a href="tel:0667436674" title="電話"><img src="phone-icon.png" alt="電話" class="icon" /></a>
-      <a href="company.html" title="会社情報"><img src="menu-icon.png" alt="会社情報" class="icon" /></a>
-    </div>
+    <h1>株式会社SK global</h1>
+    <p>ホテル清掃・リサイクル・飲食事業</p>
   </header>
 
-  <div class="container">
-    <h1>株式会社 SK global</h1>
-    <p>ホテル清掃・リサイクル・飲食事業を展開しています。</p>
+  <nav>
+    <a href="#company">会社情報</a>
+    <a href="mailto:kharelsuman53@gmail.com">メール</a>
+    <a href="tel:08045673816">電話</a>
+  </nav>
 
-    <div class="photo-grid">
-      <img src="image1.png" alt="写真1" />
-      <img src="image2.png" alt="写真2" />
-      <img src="image3.png" alt="写真3" />
-      <img src="image4.png" alt="写真4" />
-      <img src="image5.png" alt="写真5" />
-    </div>
+  <section id="company">
+    <h2>株式会社SK global（エスケーグローバル）</h2>
+    <p><strong>代表取締役：</strong>カレル・スマン</p>
+    <p><strong>所在地：</strong>大阪府大阪市生野区田島4丁目6-19</p>
+    <p><strong>携帯番号：</strong>080-4567-3816</p>
 
-    <a href="company.html" class="button">会社情報を見る</a>
-  </div>
+    <h3>事業内容</h3>
+    <ul>
+      <li>ホテル客室清掃業</li>
+      <li>リサイクル事業</li>
+      <li>飲食事業</li>
+    </ul>
+
+    <h3>会社紹介</h3>
+    <p>株式会社SK globalは、大阪市を拠点に、ホテル客室清掃・リサイクル・飲食の3つの分野で事業を展開している多角経営企業です。</p>
+    <p>私たちは、「誠実・丁寧・迅速」をモットーに、クライアントや地域社会から信頼されるサービスを提供しています。清掃業ではホテルの快適な空間づくりを、リサイクルでは持続可能な社会づくりを、飲食事業では安心で美味しい食の提供を通して、豊かな暮らしの一助となることを目指しています。</p>
+    <p>今後も地域密着型の企業として、多様なニーズに応えながら、より質の高いサービスの実現に努めてまいります。</p>
+  </section>
 
   <footer>
-    &copy; 2025 株式会社 SK global
+    &copy; 2025 株式会社SK global - All Rights Reserved
   </footer>
 
 </body>
